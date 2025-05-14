@@ -1,0 +1,6 @@
+Package: lightning-standard
+Type: Book
+Title: The Lightning Standard.
+Version: 1.0.0
+Imports: bookdown
+Remotes: rstudio/bookdown

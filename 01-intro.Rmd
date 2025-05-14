@@ -1,0 +1,5 @@
+# Introduction {#intro}
+
+1. low fees
+2. fast settlement times
+3. more private than monero

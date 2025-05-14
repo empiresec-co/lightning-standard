@@ -1,0 +1,18 @@
+# More private than monero
+
+```{r table-simple, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+require(pander)
+panderOptions('table.split.table', Inf)
+set.caption("Parameters")
+my.data <- " # replace the text below with your table data
+  _        | Monero           | Lightning
+  sender      | ri | $1600 
+  reciever      | centered      |   $12 
+  fees      | centered      |   $12 
+  amount      | centered      |   $12"
+df <- read.delim(textConnection(my.data),header=FALSE,sep="|",strip.white=TRUE,stringsAsFactors=FALSE)
+names(df) <- unname(as.list(df[1,])) # put headers on
+df <- df[-1,] # remove first row
+row.names(df)<-NULL
+pander(df, style = 'rmarkdown')
+```
