@@ -1,5 +1,8 @@
 # How private is Lightning
 
+https://x.com/JohnCantrell97/status/1478794696935751682
+
+
 """
 TIL the word privacy does not appear in any of the 59 pages of the lightning network whitepaper: https://lightning.network/lightning-network-paper.pdf
 
