@@ -16,3 +16,50 @@ df <- df[-1,] # remove first row
 row.names(df)<-NULL
 pander(df, style = 'rmarkdown')
 ```
+
+
+monero is not money as 
+
+1. flat coin (can't be used as a store of value)
+2. RandomX and CPU only deincentivizes miners and mining is not profitible even priced in XMR.
+3. asic chip is better, because for a money to be hard, you need good amount of work behind it.
+
+all this prevents monero to be a global-central-bank.
+
+which is btw the #1 priority of the bitcoin white paper.
+
+"""
+Why  Monero cannnot be money...
+
+1) By definition, money is the most salable good within an economy and only one money exists in an economic community. All other traded goods are barter trades.
+
+2) and currently for the world economy dollars are the closest thing we have to money (more saleable than gold, yes), and each country has their own fiat as money in that community - maintaining one money per economic community.
+
+3) and if bitcoin fails to become money or becomes money and then fails, no digital token can replace bitcoin as world money because nothing else can achieve digital scarcity (including Monero), we'd be back to barter, and then back to fiat of some sort for each county. For the world, we'll probably be back to bartering fiat monies of each countries, and countless competing ßhitcoîns.
+
+4) and in the presence of Bitcoin, which will become world money, Monero needs to compete with and defeat Bitcoin (excluding Bitcoin dying because that cause kills all digital tokens)... Another way of saying this is that Monero needs to actively outshine Bitcoin (and everything else), not hope for Bitcoin to fail.
+
+5) The natural force that propels a token to become money is the accumulation of the token because of the confidence that others want to accumulate it (read that again slowly). This force starts small, and is strongest the more the token is leading in the race amongst all the other tokens/objects. Bitcoin had a massive head start and now nothing comes close, it's too late. Nothing can overtake it. It can only fail. 
+
+More on point #3 (failure of Bitcoin)...
+
+If we fuck it up, say by tinkering with it to try to achieve some lower objective (besides trying to end central banking, the #1 goal), eg falling for the narrative that everyone needs to be their own retail bank, thinking Bitcoin's purpose is to end the very useful function of banking, then Bitcoin theoretically could fail. In that super unlikely scenario, all tokens will compete, and Monero's supposed privacy is not giving it any special advantage, especially given the 15 or so previous hard forks, and the existence of other privacy coins.
+
+In conclusion, you could enjoy bartering Monero like a hot potato (MoE) to resist the state, one of many tools, not a silver bullet, but not accumulate it (thinking it's going to become money), because that will lead you straight to poverty like every other shitcoiner is going to experience. You will just use it like any other tool, say VPN (No need to save in VPN subscriptions!).
+
+And don't promote it, because that slows bitcoin adoption, and makes you a ßhitcoin scammer.
+"""
+
+thebitcoinmaxiswereright.com/monero/
+
+https://www.moneroinflation.co
+
+https://p2pool.io/tail.html
+
+well these days my problem with monero,  is not that its not lightning, its just a flat coin, 
+
+and miner profitibility is also somewhat problemetic even priced in XMR.
+
+RandomX and choosing CPU onlyyy feels like a wrong move now (previously thought it was an amazing thing but after @skot9000 happened, not really)
+
+SHA256 asic is the way to go.
