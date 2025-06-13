@@ -16,3 +16,6 @@ It’s btcd and uses Neutrino fetch block filters
 
 https://github.com/lightningnetwork/lnd/issues/7201
 
+https://github.com/romanz/electrs
+
+
