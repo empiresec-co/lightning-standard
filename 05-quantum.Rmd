@@ -1,3 +1,7 @@
+https://quantumcomputing.stackexchange.com/questions/24328/is-there-a-quantum-algorithm-to-find-sha256-collisions
+
+##
+
 https://youtube.com/watch?v=RQWpF2Gb-gU
 
 https://youtube.com/watch?v=dONacVnW1Ng
