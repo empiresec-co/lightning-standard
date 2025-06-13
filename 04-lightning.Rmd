@@ -1,0 +1,150 @@
+# How private is Lightning
+
+"""
+TIL the word privacy does not appear in any of the 59 pages of the lightning network whitepaper: https://lightning.network/lightning-network-paper.pdf
+
+By contrast, the bitcoin whitepaper has a half-page dedicated to privacy (the whole thing is only 9 pages)
+
+Perhaps privacy wasn't a focus of LN's inventors
+"""
+
+(a) Receiver privacy
+(b) Onchain/offchain association
+(c) Network balances probing
+
+Specially the sender. That way, you could correlate a user with a LN node ID
+
+(a) when not using blinded paths, a technology that still isn't largely available on software, anyone with acces to the invoice knows the LN node ID the invoice is directed to.
+
+(b) today, the network has access to info that correlate LN node ID to onchain UTXOs. Together with point (a), you could trace someone onchain
+
+(c) someone could take photos of the balances of the +
+
+
+channels, and by verifying the variations from photo to photo, trace payments that took place
+
+LSPs change the general tradeoffs a little, while the LSP now knows your node ID, your balance and maybe who are you transacting to, it doesn't know your identity, and anyone that you +
+
+transact to, that know your identity, doesn't know your LN node ID anymore. The LN node ID is a key point of correlation with onchain by point (b)
+
+My personal recomendation for using LN with pretty good privacy: use a LSP that open channels with you, and swap using a service like boltz every time you need to change balance between onchain and offchain. That way, there isn't an easy onchain/offchain correlation
+
+I don't know
+
+Thankfully, unlike a tor proxy, there is a monetary incentive to run an lnproxy, so lots of honest people should theoretically do it
+
+But right now their website shows only 4 proxies are available
+
+So let's keep getting more folks to earn money running lnproxies!
+
+He's wrong. Bolt11 invoices don't reveal the recipient's node, channels, or any on-chain utxos unless he runs a routing node. Normal users don't do that, so their invoices don't reveal that info.
+
+- make a blinded bolt11 invoices from your lnd
+- go to lnproxy.org and paste it in
+- get a standard (unblinded) bolt11 invoice any wallet can pay
+
+btc txns are not encrypted obviously.
+
+paths of lightning txns are encrypted atleast in bolt 12 with blinded paths (only USE c-lightning node with a trusted LSP only)
+
+the chain itself has no encryption - yes.
+(SHA-256 HASH)
+
+the encryption is there on how you interact with it.
+
+Yep! More private than monero for a lot of reasons:
+
+- lightning invoices reveal less information than monero addresses
+- in lightning transactions, the sender is encrypted (unlike monero, which uses 15 unencrypted decoys and 1 unencrypted real spender, and just hopes analysts can't eliminate the decoys)
+- in lightning, the full amount is encrypted (unlike monero, which leaves the fee in plaintext)
+- in lightning, the recipient is encrypted (unlike monero, which typically leaves the recipient's address and a change address in plaintext, though it does randomize their order, which is good)
+- none of that data is published on a blockchain (unlike monero, where it is)
+
+Monero does some pretty good things for your privacy and I can only identify the "real" sender of a monero transaction in about 1/5 cases, and only with about 80% confidence. Chain analytics companies can do a lot better because they have off-chain data that helps them eliminate more decoys. But by comparison with lightning, monero is pretty transparent.
+
+LND has mobile stuff but
+
+https://github.com/lightningnetwork/lnd/issues/7201
+
+
+https://github.com/davidshares/Lightning-Network
+
+"FCMP fixes most of this"
+
+Lightning is already ahead of monero on privacy tech. If they eventually get around to adding support for FCMP (next year? year after?) I look forward to find out if FCMP even does what it claims to do.
+
+But even if it does, it will still be worse than lightning.
+
+FCMP accomplishes a similar goal as lightning (make the payment info look like something *anyone* could have made -- LN does this by making it an indecipherable encrypted blob, FCMP does this via a much larger zero knowledge proof).
+
+But FCMP's method is much less efficient way. Not just because it uses a far greater number of bytes, but also because every payment goes on the blockchain, and you have to *pay for* all of those bytes. It costs a far greater amount of money to use FCMP than it costs to use lightning, and for all that cost, the effect you get is roughly the same: people can't tell who sent the payment anymore.
+
+Lightning is better than FCMP.
+
+Eat your heart out, @Seth For Privacy et. al.
+
+LSPs can't tell if the pubkey in a bolt11 is the *real* destination or just another routing node
+
+They *assume* it's usually the real destination but "YMMV" (i.e. they aren't sure)
+
+Bolt11 has better privacy than a monero address
+
+Source:
+
+https://nitter.net/PhoenixWallet/status/1916844583402590504
+
+For bolt 11 payments, in the most common case we can tell the destination node id, yes.
+
+But YMMV (e.g. destination may be itself a trampoline node)
+
+>90% of the time it's going to be the real destination
+
+You don't know that
+
+By default, surveillance has to deal with this heuristic: the sender doesn't know if the recipient's invoice uses a trampoline node or not. So he doesn't know if the pubkey in the invoice even belongs to the recipient.
+
+In monero, the sender DOES know that information. The pubkey in a monero address always belongs to the recipient.
+
+In monero, surveillance is possible by default
+
+In lightning, it's not
+
+
+This is like saying a mixer is functionally no different than a coinjoin
+
+When you rely on someone else to hold your money temporarily and then send it to you later, you might get robbed
+
+Lightning fixes this
+
+That depends on how good the sender is at blockchain analysis. In the attached video, Chainalysis provides several examples of transactions where they *could* identify where the money eventually ended up.
+
+E.g. at 26:55 they trace it from Morphtoken to the Columbian guy's wallet
+
+At 30:43 they trace it from the Columbian guy's wallet to ChangeNow or Liquid Exchange
+
+At 32:49 they trace another payment from the Columbian guy's wallet to Exodus Wallet
+
+At 35:08 they do that again, except they aren't sure if it went to Exodus wallet or a mining pool
+
+At 36:51 they trace another payment from the Columbian guy's wallet to centralized exchange, except they aren't sure if it went there or to a merchant point of sale page
+
+And it was at that point that they nabbed him, because he accidentally leaked his ip address while using his wallet to pay that website
+
+video: https://primal.net/e/nevent1qqsyjc2m7gjnd50xpv34p5ga6g6keyxnddszqx27psrp56a96cgwmhq3d3lav
+
+Lightning would help a lot.
+
+For one thing, the most popular monero wallets (Cake wallet, moneroj) don't send transactions to their peers, instead they connect to a random node from a list of RPC servers and send it in plaintext to them. Lightning wallets, by contrast, (1) encrypt your transactions and (2) only send the encrypted blob to a single node whom you have a channel with. That's way, way better.
+
+For another thing, monero wallets reveal the recipient's address to the sender. They automatically log that information and if the sender is an exchange or other public entity, they can be subpoena'd and begin tracing the payment. Lightning wallets, by contrast, do not reveal the recipient's address to the sender -- not the channel, not the htlc, not anything that actually holds the money. They only get to see a public key that is used strictly for communication, and thanks to trampoline routing, it is quite common for that pubkey to not even belong to the recipient. That's way, way better.
+
+For another thing, monero wallets list all possible senders in every transaction (unencrypted btw) and put that information on a permanent ledger. Lightning doesn't do that. So if a person is being targeted and uses monero to send their money to a centralized exchange, the exchange's address will show up in that transaction and -- if the exchange discloses their addresses to the police, as many do -- the police can subpoena them for information about what transactions sent them money. They can then show them a list where the target's address shows up as a possible sender in each transaction, which is very good evidence that he sent the money. The target can be caught that way, as happened in this finnish case:
+
+https://cointelegraph.com/news/finnish-authorities-traced-monero-vastaamo-hack
+
+Since lightning wallets actually encrypt the sender and do not even share the encrypted blob with the recipient, it would help a lot if the guy chose lightning instead. The police would not see a transaction going to the exchange on the blockchain, would not know to contact them and ask them for more info, and even if they did, the exchange would not have any info to link the sender's wallet to any particular account. That's way, way better.
+
+
+
+
+
