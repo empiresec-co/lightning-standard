@@ -1,0 +1,3 @@
+No. Encryption properly done obscures patterns, meaning that there's nothing for an LLM to learn.
+
+# AI
