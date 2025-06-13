@@ -1,0 +1,18 @@
+https://github.com/vinteumorg/Floresta
+
+https://gitlab.com/bitcoin/gentoo/-/tree/master/net-p2p/core-lightning
+
+https://blog.lightning.engineering/posts/2019/11/21/mobile-lnd.html
+
+https://docs.zeusln.app/category/embedded-node/
+
+ZeusLN - 
+
+We use their backend code for our service. You can select your swap service in Swap settings
+
+
+It’s btcd and uses Neutrino fetch block filters
+
+
+https://github.com/lightningnetwork/lnd/issues/7201
+
