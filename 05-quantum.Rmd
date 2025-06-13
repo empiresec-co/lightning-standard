@@ -1,0 +1,27 @@
+https://youtube.com/watch?v=RQWpF2Gb-gU
+
+https://youtube.com/watch?v=dONacVnW1Ng
+
+Shorr's algorithm
+
+https://medium.com/qiskit/mitigate-qubit-measurement-errors-in-qiskit-using-this-new-technique-1bb07ec319b5
+
+https://docs.quantum.ibm.com/guides/configure-error-mitigation#
+
+https://medium.com/qiskit/why-quantum-learners-should-study-quantum-safe-cryptography-7877ec695790
+
+https://gssrr.org/index.php/JournalOfBasicAndApplied/article/download/17122/6782/47098
+
+https://learning.quantum.ibm.com/course/practical-introduction-to-quantum-safe-cryptography/symmetric-key-cryptography
+
+https://en.wikipedia.org/wiki/Post-quantum_cryptography
+
+# SHA-256
+
+# UTXO
+
+# PSBT
+
+# lightning Onion Routing
+
+gossip protocol
