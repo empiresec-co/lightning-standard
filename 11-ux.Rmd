@@ -5,3 +5,25 @@ how btc symbol came to be https://x.com/i/grok/share/yNCP3yXEXH3931JlCyW5N9PRD
 https://bitcoinmagazine.com/culture/my-suggestion-for-the-bitcoin-sats-symbol
 
 https://bolt12.org/
+
+selling points must be, ease of use, free, strong community and support.
+
+It must be possible to enable BTC payments with the click of ONE button. They need to be paid out in fiat (pay out in sats can be enabled)
+
+(Almost) everything needs to be abstracted away. All obstacles need to be removed.
+
+It must be FOSS, paid support for bigger companies is possible (see Zabbix).
+
+It must fulfill all regulatory and legal requirements of most countries which is a fucking pain in the ass.
+
+There must be excellent community support including from technicians and tax consultants.
+
+If someone can pull this off, Bitcoin’s wide adoption will experience an acceleration never seen before.
+
+Normies will experience first hand that Bitcoin works and people use it.
+They will see magic happen. 
+
+Price will 100x
+
+https://x.com/btc_privacy/status/1931315542054342755
+
