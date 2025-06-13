@@ -1,0 +1,7 @@
+# Distributed hash
+
+https://github.com/256-Foundation/emberone00-pcb
+
+https://github.com/braidpool/braidpool
+
+https://github.com/securitybrahh/3nm-sha256-asic-btc
