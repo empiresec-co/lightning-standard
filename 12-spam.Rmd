@@ -1,0 +1,9 @@
+ctv
+
+https://bitcoincore.org/en/2025/06/06/relay-statement/
+
+op return
+
+https://github.com/monero-project/monero/pull/8733
+
+https://github.com/monero-project/monero/pull/9751
