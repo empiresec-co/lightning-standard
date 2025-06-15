@@ -1,0 +1,1 @@
+risk = (non-desirable)^(opcode's dust size/txn size) / improvement
