@@ -23,3 +23,20 @@ contact info, email with pgp ots?, mailmonk, nostr,
 timestamps / ots?
 
 git-ots-btc stamps? 
+
+AI assisted translations books with contributions from native speakers - transifex.com?
+
+see how they release - https://github.com/bitcoinbook/bitcoinbook/releases/tag/third_edition_print1
+
+"""
+Mastering Bitcoin (Open Edition), based on the First Edition, has been translated by volunteers into more than a dozen languages. Translations are available for free under CC-BY-SA license at: https://bitcoinbook.info
+"""
+https://github.com/bitcoinbook/bitcoinbook/blob/develop/CONTRIBUTING.md
+
+svg vector drawings, dot images, png, asciidoc, adoc, html, css, 
+
+https://docs.atlas.oreilly.com/atlas/formats.html
+
+https://atlas.oreilly.com/
+
+https://github.com/bitcoinbook/bitcoinbook/blob/develop/atlas.json
