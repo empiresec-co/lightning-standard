@@ -1,0 +1,12 @@
+https://github.com/lightningnetwork/lnd/issues/7201
+
+https://amboss.tech/blog/the-metric-that-matters
+
+https://amboss.space/node/03cc1d0932bb99b0697f5b5e5961b83ab7fd66f1efc4c9f5c7bad66c1bcbe78f02
+
+https://mempool.space/lightning/node/03cc1d0932bb99b0697f5b5e5961b83ab7fd66f1efc4c9f5c7bad66c1bcbe78f02
+
+"LND APIs
+Run nodes just like on your own hardware  with gRPC and REST."
+
+https://www.voltage.cloud/lightning-nodes
