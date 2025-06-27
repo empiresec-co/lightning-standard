@@ -6,6 +6,8 @@ https://amboss.space/node/03cc1d0932bb99b0697f5b5e5961b83ab7fd66f1efc4c9f5c7bad6
 
 https://mempool.space/lightning/node/03cc1d0932bb99b0697f5b5e5961b83ab7fd66f1efc4c9f5c7bad66c1bcbe78f02
 
+https://blog.getalby.com/use-case-specific-lightning-service-providers/
+
 "LND APIs
 Run nodes just like on your own hardware  with gRPC and REST."
 
