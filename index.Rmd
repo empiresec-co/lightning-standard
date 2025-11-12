@@ -9,7 +9,8 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: empiresec-co/lightning-standard
-description: ""
+description: "Lightning is more private than monero, and as it backed by bitcoin, its the most secure & hardened cash you will ever work for."
+nocite: '@*'
 ---
 
 # Index
